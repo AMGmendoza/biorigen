@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="es" data-root="../../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gluco-Control · Biorigen</title>
+  <meta name="description" content="Yogurt funcional con mucílago de nopal, fibra soluble y cultivos vivos. Sin azúcar añadida, en tres perfiles de sabor.">
+  <meta name="theme-color" content="#1B3325">
+  <meta property="og:title" content="Gluco-Control · Biorigen">
+  <meta property="og:description" content="Yogurt funcional con mucílago de nopal, fibra soluble y cultivos vivos. Sin azúcar añadida, en tres perfiles de sabor.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/styles.css?v=72acc78030">
+  <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body class="">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M11 18l-6-6 6-6"/></symbol>
+  <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L21.5 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 5.9a5.2 5.2 0 0 0-7.4 0L12 7.3l-1.4-1.4a5.2 5.2 0 0 0-7.4 7.4L12 22l8.8-8.7a5.2 5.2 0 0 0 0-7.4Z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M12 21V10"/><path d="M12 14c0-4 2.6-7 6.4-7 1.8 0 2.8 1.2 2.8 2.7 0 3.6-3.9 6.3-9.2 6.3"/><path d="M11.7 17c0-3.4-2.2-5.5-5.2-5.5-1.5 0-2.4.9-2.4 2.2 0 2.9 3 5 7.6 5"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5.2 8.4A2 2 0 0 0 6.5 21h11a2 2 0 0 0 1.7-3.6L14 9V3"/><path d="M8 15h8"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6.5 7.1 6.5 11.2a6.5 6.5 0 0 1-13 0C5.5 10.1 12 3 12 3Z"/></symbol>
+  <symbol id="i-gut" viewBox="0 0 24 24"><path d="M6 5v6a4 4 0 0 0 4 4h1a4 4 0 0 1 4 4v1"/><path d="M10 5v4a2 2 0 0 0 2 2h1a3 3 0 0 1 3 3v1"/><path d="M18 5v2"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8Z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8Z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.7 7 9 4-1.3 7-4.5 7-9V6Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v11H3zM14 10h4l3 3v4h-7"/><circle cx="7" cy="19" r="1.5"/><circle cx="18" cy="19" r="1.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6 3h3l2 5-2 1.5a12 12 0 0 0 5.5 5.5L16 13l5 2v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4 5.2 2 2 0 0 1 6 3Z"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-credit-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></symbol>
+  <symbol id="i-package" viewBox="0 0 24 24"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9Z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></symbol>
+  <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21v-8"/><path d="M12 14c0-3.6 2.4-6 6-6 1.6 0 2.6 1 2.6 2.4 0 3.3-3.5 5.6-8.6 5.6"/><path d="M11.7 17c0-3-2-4.8-4.7-4.8-1.4 0-2.2.8-2.2 2 0 2.6 2.7 4.4 6.9 4.4"/></symbol>
+  <symbol id="i-bacteria" viewBox="0 0 24 24"><circle cx="8" cy="9" r="2.2"/><circle cx="16" cy="8" r="1.6"/><circle cx="14" cy="15" r="2.6"/><circle cx="7" cy="16" r="1.4"/><path d="M10 6.5 11.5 5M18 12l1.5-1M10 17l-1 1.5"/></symbol>
+  <symbol id="i-wheat" viewBox="0 0 24 24"><path d="M12 21V7"/><path d="M12 10c-2.5 0-4-1.5-4-4 2.5 0 4 1.5 4 4ZM12 10c2.5 0 4-1.5 4-4-2.5 0-4 1.5-4 4ZM12 15c-2.5 0-4-1.5-4-4 2.5 0 4 1.5 4 4ZM12 15c2.5 0 4-1.5 4-4-2.5 0-4 1.5-4 4Z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></symbol>
+</svg>
+  <div class="top-strip">
+    <div class="container">
+      <p><span class="dot"></span> Biotecnología alimentaria · Coatzacoalcos</p>
+      <p class="top-right">Proyecto académico ITESCO · Feria de Alimentos 2026</p>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="container head-inner">
+      <a class="brand" href="../../" aria-label="biorigen. Biotecnología con origen, inicio">
+        <span class="brand-mark"><svg class="brand-symbol" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none">
+      <circle cx="24" cy="24" r="19" stroke="currentColor" stroke-width="1.4" opacity=".28"/>
+      <path d="M24 34V15.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M24 24.2c0-5.2 3.4-8.4 7.9-8.4 2.3 0 3.7 1.5 3.7 3.4 0 4.5-4.8 7.7-11.6 7.7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M23.5 28.6c0-4.4-2.8-7-6.3-7-1.9 0-3 1.2-3 2.8 0 3.7 3.8 6.4 9.3 6.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="36.5" cy="33.5" r="1.7" fill="currentColor"/>
+      <circle cx="40" cy="28.5" r="1.1" fill="currentColor" opacity=".75"/>
+      <circle cx="32" cy="39" r="1" fill="currentColor" opacity=".6"/>
+    </svg></span>
+        <span>
+          <span class="brand-word">biorigen<span>.</span></span>
+          <span class="brand-tag">Biotecnología con origen</span>
+        </span>
+      </a>
+      <nav class="head-nav" aria-label="Navegación principal">
+        <ul class="menu-list">
+          <li class="menu-item"><a class="menu-link" href="../../">Inicio</a></li>
+          <li class="menu-item has-drop">
+            <button class="menu-link drop-toggle" type="button" aria-expanded="false" aria-controls="menuProductos">Productos <svg class="icon chev" aria-hidden="true" focusable="false"><use href="#i-chevron-down"></use></svg></button>
+            <div class="drop-panel" id="menuProductos">
+              <div class="drop-grid">
+                <div class="drop-col-title">Líneas activas</div>
+                
+                  <a class="drop-card" href="../../productos/gluco-control/">
+                    <span class="drop-thumb" style="background:#E9F0D8"><svg class="product-art" viewBox="0 0 240 300" role="img" aria-label="Envase de Gluco-Control">
+      <defs>
+        <linearGradient id="body-bg10fs0w" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset=".42" stop-color="#fdfaf3"/>
+          <stop offset="1" stop-color="#e8ddc8"/>
+        </linearGradient>
+        <linearGradient id="label-bg10fs0w" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#DCE7C4"/>
+          <stop offset="1" stop-color="#C3D5A4"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="120" cy="279" rx="74" ry="11" fill="#16241B" opacity=".11"/>
+      <rect x="56" y="46" width="128" height="31" rx="10" fill="#1B3325"/>
+      <rect x="62" y="53" width="116" height="4" rx="2" fill="#ffffff" opacity=".16"/>
+      <rect x="64" y="77" width="112" height="14" rx="4" fill="#EDE3CF" stroke="#DCD1BA" stroke-width="1"/>
+      <path d="M58 88h124l-9 154c-.6 11-8.6 17-19.6 17H86.6c-11 0-19-6-19.6-17Z" fill="url(#body-bg10fs0w)" stroke="#DCD1BA" stroke-width="1.4"/>
+      <path d="M80 100l-7 130" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+      <path d="M165 100l6 128" stroke="#16241B" stroke-width="10" stroke-linecap="round" opacity=".05"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="url(#label-bg10fs0w)"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="none" stroke="#16241B" stroke-opacity=".08"/>
+      <g transform="translate(110 138)" stroke="#16241B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55">
+        <path d="M10 19V7"/>
+        <path d="M10 13.5c0-3.2 1.9-5 4.1-5 1.3 0 2 .9 2 1.9 0 2.4-2.2 4.3-6.1 4.3"/>
+        <path d="M9.7 16c0-2.6-1.6-4-3.5-4-1.1 0-1.8.7-1.8 1.7 0 2.1 1.8 3.8 5.3 3.8"/>
+      </g>
+      <text x="120" y="176" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1" fill="#16241B">GLUCO</text>
+      <text x="120" y="193" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1.2" fill="#16241B">CONTROL</text>
+      <path d="M96 201h48" stroke="#16241B" stroke-opacity=".28" stroke-width="1"/>
+      <text x="120" y="213" text-anchor="middle" font-family="Manrope, sans-serif" font-size="5.4" font-weight="700" letter-spacing="1.5" fill="#16241B" fill-opacity=".72">YOGURT DE NOPAL</text>
+      <text x="120" y="228" text-anchor="middle" font-family="Manrope, sans-serif" font-size="7" font-weight="800" letter-spacing=".6" fill="#16241B" fill-opacity=".8">150 g</text>
+      <circle cx="154" cy="232" r="3.6" fill="#5C7F45"/>
+    </svg></span>
+                    <span><strong>Gluco-Control</strong><small>Yogurt funcional · Disponible en demo</small></span>
+                  </a>
+                  <a class="drop-card" href="../../productos/kefir/">
+                    <span class="drop-thumb" style="background:#F7E3E1"><svg class="product-art" viewBox="0 0 220 340" role="img" aria-label="Botella de Kéfir">
+      <defs>
+        <linearGradient id="glass-bg114itg" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset=".45" stop-color="#fdfaf3"/>
+          <stop offset="1" stop-color="#e6dcc8"/>
+        </linearGradient>
+        <linearGradient id="liquid-bg114itg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#D8C39E" stop-opacity=".92"/>
+          <stop offset="1" stop-color="#D8C39E" stop-opacity=".55"/>
+        </linearGradient>
+        <linearGradient id="cap-bg114itg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#3E3A32"/>
+          <stop offset="1" stop-color="#1f1d18"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="110" cy="320" rx="62" ry="10" fill="#16241B" opacity=".12"/>
+      <rect x="84" y="22" width="52" height="26" rx="6" fill="url(#cap-bg114itg)"/>
+      <rect x="88" y="27" width="44" height="3" rx="1.5" fill="#ffffff" opacity=".16"/>
+      <path d="M90 48h40v24c0 8 3 13 9 20 10 11 16 25 16 43v143c0 14-9 22-23 22H88c-14 0-23-8-23-22V135c0-18 6-32 16-43 6-7 9-12 9-20Z" fill="url(#glass-bg114itg)" stroke="#DCD1BA" stroke-width="1.5"/>
+      <path d="M77 148h66v142c0 9-6 14-15 14H92c-9 0-15-5-15-14Z" fill="url(#liquid-bg114itg)"/>
+      <path d="M80 152h60" stroke="#ffffff" stroke-width="2" opacity=".35"/>
+      <path d="M78 120l-5 176" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity=".45"/>
+      <rect x="63" y="170" width="94" height="106" rx="8" fill="#EADCC2"/>
+      <rect x="63" y="170" width="94" height="106" rx="8" fill="none" stroke="#16241B" stroke-opacity=".08"/>
+      <text x="110" y="199" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="20" font-weight="700" letter-spacing="2.4" fill="#16241B">KÉFIR</text>
+      <path d="M82 208h56" stroke="#16241B" stroke-opacity=".25" stroke-width="1"/>
+      <text x="110" y="221" text-anchor="middle" font-family="Manrope, sans-serif" font-size="5.2" font-weight="700" letter-spacing="1.4" fill="#16241B" fill-opacity=".7">FERMENTADO DE LECHE</text>
+      <text x="110" y="242" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="15" font-weight="600" fill="#16241B">Natural</text>
+      <text x="110" y="260" text-anchor="middle" font-family="Manrope, sans-serif" font-size="7" font-weight="800" letter-spacing=".8" fill="#16241B" fill-opacity=".75">500 ml</text>
+      <circle cx="140" cy="264" r="3.4" fill="#A8875C"/>
+      <g fill="#ffffff" opacity=".55">
+        <circle cx="92" cy="285" r="2.2"/>
+        <circle cx="103" cy="292" r="1.4"/>
+        <circle cx="128" cy="288" r="1.8"/>
+        <circle cx="136" cy="296" r="1.1"/>
+      </g>
+    </svg></span>
+                    <span><strong>Kéfir</strong><small>Fermentado de leche · Disponible en demo</small></span>
+                  </a>
+                <div class="drop-col-title">Sabores destacados</div>
+                
+                  <a class="drop-card" href="../../productos/gluco-control/original/">
+                    <span class="drop-thumb" style="background:#E9F0D8"><svg class="product-art" viewBox="0 0 240 300" role="img" aria-label="Envase de Gluco-Control Original">
+      <defs>
+        <linearGradient id="body-bg124fy7" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset=".42" stop-color="#fdfaf3"/>
+          <stop offset="1" stop-color="#e8ddc8"/>
+        </linearGradient>
+        <linearGradient id="label-bg124fy7" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#DCE7C4"/>
+          <stop offset="1" stop-color="#C3D5A4"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="120" cy="279" rx="74" ry="11" fill="#16241B" opacity=".11"/>
+      <rect x="56" y="46" width="128" height="31" rx="10" fill="#1B3325"/>
+      <rect x="62" y="53" width="116" height="4" rx="2" fill="#ffffff" opacity=".16"/>
+      <rect x="64" y="77" width="112" height="14" rx="4" fill="#EDE3CF" stroke="#DCD1BA" stroke-width="1"/>
+      <path d="M58 88h124l-9 154c-.6 11-8.6 17-19.6 17H86.6c-11 0-19-6-19.6-17Z" fill="url(#body-bg124fy7)" stroke="#DCD1BA" stroke-width="1.4"/>
+      <path d="M80 100l-7 130" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+      <path d="M165 100l6 128" stroke="#16241B" stroke-width="10" stroke-linecap="round" opacity=".05"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="url(#label-bg124fy7)"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="none" stroke="#16241B" stroke-opacity=".08"/>
+      <g transform="translate(110 138)" stroke="#16241B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55">
+        <path d="M10 19V7"/>
+        <path d="M10 13.5c0-3.2 1.9-5 4.1-5 1.3 0 2 .9 2 1.9 0 2.4-2.2 4.3-6.1 4.3"/>
+        <path d="M9.7 16c0-2.6-1.6-4-3.5-4-1.1 0-1.8.7-1.8 1.7 0 2.1 1.8 3.8 5.3 3.8"/>
+      </g>
+      <text x="120" y="176" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1" fill="#16241B">GLUCO</text>
+      <text x="120" y="193" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1.2" fill="#16241B">CONTROL</text>
+      <path d="M96 201h48" stroke="#16241B" stroke-opacity=".28" stroke-width="1"/>
+      <text x="120" y="213" text-anchor="middle" font-family="Manrope, sans-serif" font-size="5.4" font-weight="700" letter-spacing="1.5" fill="#16241B" fill-opacity=".72">YOGURT DE NOPAL</text>
+      <text x="120" y="228" text-anchor="middle" font-family="Manrope, sans-serif" font-size="7" font-weight="800" letter-spacing=".6" fill="#16241B" fill-opacity=".8">150 g</text>
+      <circle cx="154" cy="232" r="3.6" fill="#5C7F45"/>
+    </svg></span>
+                    <span><strong>Gluco-Control Original</strong><small>Desde $45 · 150 g</small></span>
+                  </a>
+                  <a class="drop-card" href="../../productos/gluco-control/endulzado/">
+                    <span class="drop-thumb" style="background:#F7EDD5"><svg class="product-art" viewBox="0 0 240 300" role="img" aria-label="Envase de Gluco-Control Endulzado">
+      <defs>
+        <linearGradient id="body-bg13hnsi" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset=".42" stop-color="#fdfaf3"/>
+          <stop offset="1" stop-color="#e8ddc8"/>
+        </linearGradient>
+        <linearGradient id="label-bg13hnsi" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F0DDB2"/>
+          <stop offset="1" stop-color="#E3C784"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="120" cy="279" rx="74" ry="11" fill="#16241B" opacity=".11"/>
+      <rect x="56" y="46" width="128" height="31" rx="10" fill="#6B4E2E"/>
+      <rect x="62" y="53" width="116" height="4" rx="2" fill="#ffffff" opacity=".16"/>
+      <rect x="64" y="77" width="112" height="14" rx="4" fill="#EDE3CF" stroke="#DCD1BA" stroke-width="1"/>
+      <path d="M58 88h124l-9 154c-.6 11-8.6 17-19.6 17H86.6c-11 0-19-6-19.6-17Z" fill="url(#body-bg13hnsi)" stroke="#DCD1BA" stroke-width="1.4"/>
+      <path d="M80 100l-7 130" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+      <path d="M165 100l6 128" stroke="#16241B" stroke-width="10" stroke-linecap="round" opacity=".05"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="url(#label-bg13hnsi)"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="none" stroke="#16241B" stroke-opacity=".08"/>
+      <g transform="translate(110 138)" stroke="#16241B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55">
+        <path d="M10 19V7"/>
+        <path d="M10 13.5c0-3.2 1.9-5 4.1-5 1.3 0 2 .9 2 1.9 0 2.4-2.2 4.3-6.1 4.3"/>
+        <path d="M9.7 16c0-2.6-1.6-4-3.5-4-1.1 0-1.8.7-1.8 1.7 0 2.1 1.8 3.8 5.3 3.8"/>
+      </g>
+      <text x="120" y="176" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1" fill="#16241B">GLUCO</text>
+      <text x="120" y="193" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1.2" fill="#16241B">CONTROL</text>
+      <path d="M96 201h48" stroke="#16241B" stroke-opacity=".28" stroke-width="1"/>
+      <text x="120" y="213" text-anchor="middle" font-family="Manrope, sans-serif" font-size="5.4" font-weight="700" letter-spacing="1.5" fill="#16241B" fill-opacity=".72">YOGURT DE NOPAL</text>
+      <text x="120" y="228" text-anchor="middle" font-family="Manrope, sans-serif" font-size="7" font-weight="800" letter-spacing=".6" fill="#16241B" fill-opacity=".8">150 g</text>
+      <circle cx="154" cy="232" r="3.6" fill="#C49A3F"/>
+    </svg></span>
+                    <span><strong>Gluco-Control Endulzado</strong><small>Desde $48 · 150 g</small></span>
+                  </a>
+                  <a class="drop-card" href="../../productos/gluco-control/afrutado/">
+                    <span class="drop-thumb" style="background:#F6E3DE"><svg class="product-art" viewBox="0 0 240 300" role="img" aria-label="Envase de Gluco-Control Afrutado">
+      <defs>
+        <linearGradient id="body-bg14p8tn" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset=".42" stop-color="#fdfaf3"/>
+          <stop offset="1" stop-color="#e8ddc8"/>
+        </linearGradient>
+        <linearGradient id="label-bg14p8tn" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#EBC7BE"/>
+          <stop offset="1" stop-color="#D9A79C"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="120" cy="279" rx="74" ry="11" fill="#16241B" opacity=".11"/>
+      <rect x="56" y="46" width="128" height="31" rx="10" fill="#7A3A2E"/>
+      <rect x="62" y="53" width="116" height="4" rx="2" fill="#ffffff" opacity=".16"/>
+      <rect x="64" y="77" width="112" height="14" rx="4" fill="#EDE3CF" stroke="#DCD1BA" stroke-width="1"/>
+      <path d="M58 88h124l-9 154c-.6 11-8.6 17-19.6 17H86.6c-11 0-19-6-19.6-17Z" fill="url(#body-bg14p8tn)" stroke="#DCD1BA" stroke-width="1.4"/>
+      <path d="M80 100l-7 130" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+      <path d="M165 100l6 128" stroke="#16241B" stroke-width="10" stroke-linecap="round" opacity=".05"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="url(#label-bg14p8tn)"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="none" stroke="#16241B" stroke-opacity=".08"/>
+      <g transform="translate(110 138)" stroke="#16241B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55">
+        <path d="M10 19V7"/>
+        <path d="M10 13.5c0-3.2 1.9-5 4.1-5 1.3 0 2 .9 2 1.9 0 2.4-2.2 4.3-6.1 4.3"/>
+        <path d="M9.7 16c0-2.6-1.6-4-3.5-4-1.1 0-1.8.7-1.8 1.7 0 2.1 1.8 3.8 5.3 3.8"/>
+      </g>
+      <text x="120" y="176" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1" fill="#16241B">GLUCO</text>
+      <text x="120" y="193" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1.2" fill="#16241B">CONTROL</text>
+      <path d="M96 201h48" stroke="#16241B" stroke-opacity=".28" stroke-width="1"/>
+      <text x="120" y="213" text-anchor="middle" font-family="Manrope, sans-serif" font-size="5.4" font-weight="700" letter-spacing="1.5" fill="#16241B" fill-opacity=".72">YOGURT DE NOPAL</text>
+      <text x="120" y="228" text-anchor="middle" font-family="Manrope, sans-serif" font-size="7" font-weight="800" letter-spacing=".6" fill="#16241B" fill-opacity=".8">150 g</text>
+      <circle cx="154" cy="232" r="3.6" fill="#B85C4A"/>
+    </svg></span>
+                    <span><strong>Gluco-Control Afrutado</strong><small>Desde $48 · 150 g</small></span>
+                  </a>
+                  <a class="drop-card" href="../../productos/kefir/natural/">
+                    <span class="drop-thumb" style="background:#F3EAD9"><svg class="product-art" viewBox="0 0 220 340" role="img" aria-label="Botella de Kéfir Natural">
+      <defs>
+        <linearGradient id="glass-bg15oigc" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset=".45" stop-color="#fdfaf3"/>
+          <stop offset="1" stop-color="#e6dcc8"/>
+        </linearGradient>
+        <linearGradient id="liquid-bg15oigc" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#D8C39E" stop-opacity=".92"/>
+          <stop offset="1" stop-color="#D8C39E" stop-opacity=".55"/>
+        </linearGradient>
+        <linearGradient id="cap-bg15oigc" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#3E3A32"/>
+          <stop offset="1" stop-color="#1f1d18"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="110" cy="320" rx="62" ry="10" fill="#16241B" opacity=".12"/>
+      <rect x="84" y="22" width="52" height="26" rx="6" fill="url(#cap-bg15oigc)"/>
+      <rect x="88" y="27" width="44" height="3" rx="1.5" fill="#ffffff" opacity=".16"/>
+      <path d="M90 48h40v24c0 8 3 13 9 20 10 11 16 25 16 43v143c0 14-9 22-23 22H88c-14 0-23-8-23-22V135c0-18 6-32 16-43 6-7 9-12 9-20Z" fill="url(#glass-bg15oigc)" stroke="#DCD1BA" stroke-width="1.5"/>
+      <path d="M77 148h66v142c0 9-6 14-15 14H92c-9 0-15-5-15-14Z" fill="url(#liquid-bg15oigc)"/>
+      <path d="M80 152h60" stroke="#ffffff" stroke-width="2" opacity=".35"/>
+      <path d="M78 120l-5 176" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity=".45"/>
+      <rect x="63" y="170" width="94" height="106" rx="8" fill="#EADCC2"/>
+      <rect x="63" y="170" width="94" height="106" rx="8" fill="none" stroke="#16241B" stroke-opacity=".08"/>
+      <text x="110" y="199" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="20" font-weight="700" letter-spacing="2.4" fill="#16241B">KÉFIR</text>
+      <path d="M82 208h56" stroke="#16241B" stroke-opacity=".25" stroke-width="1"/>
+      <text x="110" y="221" text-anchor="middle" font-family="Manrope, sans-serif" font-size="5.2" font-weight="700" letter-spacing="1.4" fill="#16241B" fill-opacity=".7">FERMENTADO DE LECHE</text>
+      <text x="110" y="242" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="15" font-weight="600" fill="#16241B">Natural</text>
+      <text x="110" y="260" text-anchor="middle" font-family="Manrope, sans-serif" font-size="7" font-weight="800" letter-spacing=".8" fill="#16241B" fill-opacity=".75">500 ml</text>
+      <circle cx="140" cy="264" r="3.4" fill="#A8875C"/>
+      <g fill="#ffffff" opacity=".55">
+        <circle cx="92" cy="285" r="2.2"/>
+        <circle cx="103" cy="292" r="1.4"/>
+        <circle cx="128" cy="288" r="1.8"/>
+        <circle cx="136" cy="296" r="1.1"/>
+      </g>
+    </svg></span>
+                    <span><strong>Kéfir Natural</strong><small>Desde $32 · 250 ml</small></span>
+                  </a>
+                <div class="drop-foot">
+                  <a class="link-btn" href="../../productos/">Ver catálogo completo <svg class="icon " aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
+                  <span class="tag">6 productos demo</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item"><a class="menu-link" href="../../nosotros/">Nosotros</a></li>
+          <li class="menu-item"><a class="menu-link" href="../../ciencia/">Ciencia</a></li>
+          <li class="menu-item has-drop">
+            <button class="menu-link drop-toggle" type="button" aria-expanded="false" aria-controls="menuProyectos">Proyectos <svg class="icon chev" aria-hidden="true" focusable="false"><use href="#i-chevron-down"></use></svg></button>
+            <div class="drop-panel" id="menuProyectos">
+              <div class="drop-grid">
+                <div class="drop-col-title">Biorigen Labs</div>
+                
+    <a class="drop-card" href="../../proyectos/sano-derma/">
+      <span class="drop-thumb" style="background:#E3EDF0"><svg class="product-art" viewBox="0 0 220 260" role="img" aria-label="Tarro de SANO-DERMA">
+      <defs>
+        <linearGradient id="cream-bgycmea" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset=".45" stop-color="#fbf8f1"/>
+          <stop offset="1" stop-color="#e4ddcd"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="110" cy="238" rx="64" ry="10" fill="#16241B" opacity=".12"/>
+      <rect x="44" y="52" width="132" height="28" rx="9" fill="#3E4F57"/>
+      <rect x="50" y="58" width="120" height="3" rx="1.5" fill="#ffffff" opacity=".16"/>
+      <rect x="52" y="80" width="116" height="12" rx="4" fill="#e8e0d2" stroke="#d8cfbd" stroke-width="1"/>
+      <path d="M50 92h120l-6 128c-.5 10-7.4 16-17.4 16H73.4c-10 0-16.9-6-17.4-16Z" fill="url(#cream-bgycmea)" stroke="#d8cfbd" stroke-width="1.4"/>
+      <path d="M66 100l-4 110" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity=".5"/>
+      <rect x="64" y="122" width="92" height="92" rx="7" fill="#DCEBEE"/>
+      <rect x="64" y="122" width="92" height="92" rx="7" fill="none" stroke="#16241B" stroke-opacity=".08"/>
+      <text x="110" y="151" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="15" font-weight="700" letter-spacing="1.2" fill="#16241B">SANO</text>
+      <text x="110" y="167" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="15" font-weight="700" letter-spacing="1.2" fill="#16241B">DERMA</text>
+      <path d="M86 175h48" stroke="#16241B" stroke-opacity=".25" stroke-width="1"/>
+      <text x="110" y="187" text-anchor="middle" font-family="Manrope, sans-serif" font-size="5" font-weight="700" letter-spacing="1.3" fill="#16241B" fill-opacity=".7">GANODERMA LUCIDUM</text>
+      <text x="110" y="203" text-anchor="middle" font-family="Manrope, sans-serif" font-size="7" font-weight="800" letter-spacing=".6" fill="#16241B" fill-opacity=".75">CREMA · 50 g</text>
+      <circle cx="140" cy="209" r="3.2" fill="#5B7C8D"/>
+    </svg></span>
+      <span><strong>SANO-DERMA</strong><small>Salud humana · Validación y registro</small></span>
+    </a>
+    <a class="drop-card" href="../../proyectos/barras-energeticas/">
+      <span class="drop-thumb" style="background:#F7EDD5"><svg class="product-art" viewBox="0 0 240 200" role="img" aria-label="Barra Barras Biorigen">
+      <ellipse cx="120" cy="176" rx="76" ry="9" fill="#16241B" opacity=".12"/>
+      <g transform="rotate(-8 120 100)">
+        <rect x="38" y="55" width="164" height="86" rx="12" fill="#F0DDB2" stroke="#16241B" stroke-opacity=".08"/>
+        <rect x="38" y="55" width="164" height="86" rx="12" fill="none" stroke="#ffffff" stroke-opacity=".35"/>
+        <path d="M38 78h164" stroke="#16241B" stroke-opacity=".12"/>
+        <path d="M38 120h164" stroke="#16241B" stroke-opacity=".12"/>
+        <text x="120" y="96" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="20" font-weight="700" letter-spacing="1.5" fill="#16241B">BIORIGEN</text>
+        <text x="120" y="112" text-anchor="middle" font-family="Manrope, sans-serif" font-size="6" font-weight="700" letter-spacing="2" fill="#16241B" fill-opacity=".7">BARRA ENERGÉTICA</text>
+        <text x="120" y="135" text-anchor="middle" font-family="Manrope, sans-serif" font-size="7" font-weight="800" letter-spacing="1" fill="#16241B" fill-opacity=".6">EN FORMULACIÓN</text>
+        <circle cx="181" cy="68" r="4" fill="#B08A3E"/>
+      </g>
+    </svg></span>
+      <span><strong>Barras Biorigen</strong><small>Alimentación funcional · En formulación</small></span>
+    </a>
+    <a class="drop-card" href="../../proyectos/fertilizante-hongos/">
+      <span class="drop-thumb" style="background:#E9F0D8"><svg class="product-art" viewBox="0 0 220 320" role="img" aria-label="Envase de Biofertilizante fúngico">
+      <defs>
+        <linearGradient id="fert-bgzua2b" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#6b5a3a"/>
+          <stop offset=".45" stop-color="#8a7448"/>
+          <stop offset="1" stop-color="#5b4b30"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="110" cy="300" rx="58" ry="9" fill="#16241B" opacity=".12"/>
+      <rect x="86" y="24" width="48" height="18" rx="4" fill="#2f2b22"/>
+      <path d="M100 42h20v18h-20Z" fill="#3a352a"/>
+      <path d="M96 60h28l16 24v190c0 13-9 21-22 21h-16c-13 0-22-8-22-21V84Z" fill="url(#fert-bgzua2b)" stroke="#3d3322" stroke-width="1.4"/>
+      <path d="M80 130h60v142c0 8-5 13-14 13H94c-9 0-14-5-14-13Z" fill="#3f4a2a" opacity=".55"/>
+      <rect x="68" y="150" width="84" height="94" rx="7" fill="#E9F0D8"/>
+      <text x="110" y="177" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16" font-weight="700" letter-spacing="1" fill="#16241B">BIOFERT</text>
+      <path d="M86 185h48" stroke="#16241B" stroke-opacity=".25" stroke-width="1"/>
+      <text x="110" y="197" text-anchor="middle" font-family="Manrope, sans-serif" font-size="5" font-weight="700" letter-spacing="1.3" fill="#16241B" fill-opacity=".7">A BASE DE HONGOS</text>
+      <text x="110" y="215" text-anchor="middle" font-family="Manrope, sans-serif" font-size="6.5" font-weight="800" letter-spacing=".8" fill="#16241B" fill-opacity=".75">EN INVESTIGACIÓN</text>
+      <circle cx="138" cy="226" r="3.2" fill="#6E8B5A"/>
+      <g fill="#ffffff" opacity=".25">
+        <circle cx="86" cy="270" r="2"/>
+        <circle cx="128" cy="276" r="1.4"/>
+        <circle cx="105" cy="283" r="1.1"/>
+      </g>
+    </svg></span>
+      <span><strong>Biofertilizante fúngico</strong><small>Agroindustria · En investigación</small></span>
+    </a>
+                <div class="drop-foot">
+                  <a class="link-btn" href="../../proyectos/">Ver todos los proyectos <svg class="icon " aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
+                  <span class="tag">En desarrollo</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item"><a class="menu-link" href="../../contacto/">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="head-actions">
+        <a class="btn btn--solid btn--sm head-cta" href="../../productos/">Comprar</a>
+        <button class="icon-btn" type="button" data-open-cart aria-label="Abrir carrito"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-cart"></use></svg><span class="cart-count" id="cartCount" hidden>0</span></button>
+        <button class="icon-btn" type="button" id="accountBtn" data-open-account aria-label="Mi cuenta"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-user"></use></svg></button>
+        <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mobilePanel" aria-label="Abrir menú"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-panel" id="mobilePanel">
+      <div class="mobile-links">
+        <a href="../../">Inicio</a>
+        <div class="mobile-group">
+          <button class="mobile-toggle" type="button" aria-expanded="false">Productos <svg class="icon chev" aria-hidden="true" focusable="false"><use href="#i-chevron-down"></use></svg></button>
+          <div class="mobile-sub">
+            <a href="../../productos/">Ver catálogo</a>
+            <a href="../../productos/gluco-control/">Gluco-Control · yogurt</a>
+            <a href="../../productos/gluco-control/original/">Gluco-Control Original</a><a href="../../productos/gluco-control/endulzado/">Gluco-Control Endulzado</a><a href="../../productos/gluco-control/afrutado/">Gluco-Control Afrutado</a>
+            <a href="../../productos/kefir/">Kéfir · fermentado de leche</a>
+            <a href="../../productos/kefir/natural/">Kéfir Natural</a><a href="../../productos/kefir/fresa/">Kéfir de Fresa</a><a href="../../productos/kefir/coco/">Kéfir de Coco</a>
+          </div>
+        </div>
+        <div class="mobile-group">
+          <button class="mobile-toggle" type="button" aria-expanded="false">Proyectos <svg class="icon chev" aria-hidden="true" focusable="false"><use href="#i-chevron-down"></use></svg></button>
+          <div class="mobile-sub">
+            <a href="../../proyectos/">Ver todos</a>
+            <a href="../../proyectos/sano-derma/">SANO-DERMA</a><a href="../../proyectos/barras-energeticas/">Barras Biorigen</a><a href="../../proyectos/fertilizante-hongos/">Biofertilizante fúngico</a>
+          </div>
+        </div>
+        <a href="../../nosotros/">Nosotros</a>
+        <a href="../../ciencia/">Ciencia</a>
+        <a href="../../contacto/">Contacto</a>
+      </div>
+      <div class="mobile-actions">
+        <a class="btn btn--solid btn--block" href="../../productos/">Comprar</a>
+        <button class="btn btn--ghost btn--block" type="button" data-open-account>Mi cuenta</button>
+        <button class="btn btn--ghost btn--block" type="button" data-open-tasting>Solicitar degustación</button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+  <section class="line-hero" style="--tint:#E9F0D8;--tint2:#F6FAEC">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Ruta de navegación"><a href="../../">Inicio</a><span>/</span><a href="../../productos/">Productos</a><span>/</span><span aria-current="page">Gluco-Control</span></nav>
+      <div class="line-hero__grid">
+        <div class="line-hero__copy">
+          <span class="eyebrow">Yogurt funcional</span>
+          <h1>Gluco-Control: yogurt de nopal, fermentación viva.</h1>
+          <p class="lead">Un yogurt funcional con mucílago de nopal, fibra soluble y cultivos vivos. Tres perfiles para distintos momentos del día: Original, Endulzado y Afrutado.</p>
+          <div class="line-hero__actions">
+            <a class="btn btn--solid" href="#sabores">Elegir sabor <svg class="icon " aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
+            <button class="btn btn--ghost" type="button" data-open-tasting><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-sparkle"></use></svg> Solicitar degustación</button>
+          </div>
+          <div class="line-stats">
+            <div><strong>3</strong><span>sabores</span></div>
+            <div><strong>2</strong><span>presentaciones</span></div>
+            <div><strong>100%</strong><span>fermentación viva</span></div>
+          </div>
+        </div>
+        <div class="line-hero__art">
+          <span class="line-hero__stamp">Disponible en demo</span>
+          <svg class="product-art" viewBox="0 0 240 300" role="img" aria-label="Envase de Gluco-Control">
+      <defs>
+        <linearGradient id="body-bgu2w7u" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset=".42" stop-color="#fdfaf3"/>
+          <stop offset="1" stop-color="#e8ddc8"/>
+        </linearGradient>
+        <linearGradient id="label-bgu2w7u" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#DCE7C4"/>
+          <stop offset="1" stop-color="#C3D5A4"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="120" cy="279" rx="74" ry="11" fill="#16241B" opacity=".11"/>
+      <rect x="56" y="46" width="128" height="31" rx="10" fill="#1B3325"/>
+      <rect x="62" y="53" width="116" height="4" rx="2" fill="#ffffff" opacity=".16"/>
+      <rect x="64" y="77" width="112" height="14" rx="4" fill="#EDE3CF" stroke="#DCD1BA" stroke-width="1"/>
+      <path d="M58 88h124l-9 154c-.6 11-8.6 17-19.6 17H86.6c-11 0-19-6-19.6-17Z" fill="url(#body-bgu2w7u)" stroke="#DCD1BA" stroke-width="1.4"/>
+      <path d="M80 100l-7 130" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+      <path d="M165 100l6 128" stroke="#16241B" stroke-width="10" stroke-linecap="round" opacity=".05"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="url(#label-bgu2w7u)"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="none" stroke="#16241B" stroke-opacity=".08"/>
+      <g transform="translate(110 138)" stroke="#16241B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55">
+        <path d="M10 19V7"/>
+        <path d="M10 13.5c0-3.2 1.9-5 4.1-5 1.3 0 2 .9 2 1.9 0 2.4-2.2 4.3-6.1 4.3"/>
+        <path d="M9.7 16c0-2.6-1.6-4-3.5-4-1.1 0-1.8.7-1.8 1.7 0 2.1 1.8 3.8 5.3 3.8"/>
+      </g>
+      <text x="120" y="176" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1" fill="#16241B">GLUCO</text>
+      <text x="120" y="193" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1.2" fill="#16241B">CONTROL</text>
+      <path d="M96 201h48" stroke="#16241B" stroke-opacity=".28" stroke-width="1"/>
+      <text x="120" y="213" text-anchor="middle" font-family="Manrope, sans-serif" font-size="5.4" font-weight="700" letter-spacing="1.5" fill="#16241B" fill-opacity=".72">YOGURT DE NOPAL</text>
+      <text x="120" y="228" text-anchor="middle" font-family="Manrope, sans-serif" font-size="7" font-weight="800" letter-spacing=".6" fill="#16241B" fill-opacity=".8">150 g</text>
+      <circle cx="154" cy="232" r="3.6" fill="#5C7F45"/>
+    </svg>
+          <span class="line-hero__note">sin azúcar añadida</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sabores">
+    <div class="container">
+      <div class="section-head" data-reveal>
+    <div>
+      <span class="eyebrow">Sabores</span>
+      <h2>Elige tu favorito.</h2>
+      <p class="lead">Tres formas de tomar el mismo fermentado: sin endulzar, con un toque dulce o con fruta de temporada.</p>
+    </div>
+    
+  </div>
+      <div class="flavor-grid"><article class="flavor-card" data-reveal>
+    <div class="flavor-card__media" style="--tint:#E9F0D8;--tint2:#F6FAEC"><svg class="product-art" viewBox="0 0 240 300" role="img" aria-label="Envase de Gluco-Control Original">
+      <defs>
+        <linearGradient id="body-bgvkgug" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset=".42" stop-color="#fdfaf3"/>
+          <stop offset="1" stop-color="#e8ddc8"/>
+        </linearGradient>
+        <linearGradient id="label-bgvkgug" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#DCE7C4"/>
+          <stop offset="1" stop-color="#C3D5A4"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="120" cy="279" rx="74" ry="11" fill="#16241B" opacity=".11"/>
+      <rect x="56" y="46" width="128" height="31" rx="10" fill="#1B3325"/>
+      <rect x="62" y="53" width="116" height="4" rx="2" fill="#ffffff" opacity=".16"/>
+      <rect x="64" y="77" width="112" height="14" rx="4" fill="#EDE3CF" stroke="#DCD1BA" stroke-width="1"/>
+      <path d="M58 88h124l-9 154c-.6 11-8.6 17-19.6 17H86.6c-11 0-19-6-19.6-17Z" fill="url(#body-bgvkgug)" stroke="#DCD1BA" stroke-width="1.4"/>
+      <path d="M80 100l-7 130" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+      <path d="M165 100l6 128" stroke="#16241B" stroke-width="10" stroke-linecap="round" opacity=".05"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="url(#label-bgvkgug)"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="none" stroke="#16241B" stroke-opacity=".08"/>
+      <g transform="translate(110 138)" stroke="#16241B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55">
+        <path d="M10 19V7"/>
+        <path d="M10 13.5c0-3.2 1.9-5 4.1-5 1.3 0 2 .9 2 1.9 0 2.4-2.2 4.3-6.1 4.3"/>
+        <path d="M9.7 16c0-2.6-1.6-4-3.5-4-1.1 0-1.8.7-1.8 1.7 0 2.1 1.8 3.8 5.3 3.8"/>
+      </g>
+      <text x="120" y="176" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1" fill="#16241B">GLUCO</text>
+      <text x="120" y="193" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1.2" fill="#16241B">CONTROL</text>
+      <path d="M96 201h48" stroke="#16241B" stroke-opacity=".28" stroke-width="1"/>
+      <text x="120" y="213" text-anchor="middle" font-family="Manrope, sans-serif" font-size="5.4" font-weight="700" letter-spacing="1.5" fill="#16241B" fill-opacity=".72">YOGURT DE NOPAL</text>
+      <text x="120" y="228" text-anchor="middle" font-family="Manrope, sans-serif" font-size="7" font-weight="800" letter-spacing=".6" fill="#16241B" fill-opacity=".8">150 g</text>
+      <circle cx="154" cy="232" r="3.6" fill="#5C7F45"/>
+    </svg></div>
+    <div class="flavor-card__body">
+      <h3>Original</h3>
+      <p>El yogurt de nopal en su forma más pura. Sin endulzantes añadidos, con el máximo contenido de fibra y un sabor natural a nopal y canela.</p>
+      <div class="flavor-card__foot">
+        <div class="price"><strong>$45</strong><span>desde · 150 g</span></div>
+        <a class="btn btn--sm btn--solid" href="../../productos/gluco-control/original/">Elegir <svg class="icon " aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
+      </div>
+    </div>
+  </article><article class="flavor-card" data-reveal>
+    <div class="flavor-card__media" style="--tint:#F7EDD5;--tint2:#FCF6E8"><svg class="product-art" viewBox="0 0 240 300" role="img" aria-label="Envase de Gluco-Control Endulzado">
+      <defs>
+        <linearGradient id="body-bgw9tgi" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset=".42" stop-color="#fdfaf3"/>
+          <stop offset="1" stop-color="#e8ddc8"/>
+        </linearGradient>
+        <linearGradient id="label-bgw9tgi" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F0DDB2"/>
+          <stop offset="1" stop-color="#E3C784"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="120" cy="279" rx="74" ry="11" fill="#16241B" opacity=".11"/>
+      <rect x="56" y="46" width="128" height="31" rx="10" fill="#6B4E2E"/>
+      <rect x="62" y="53" width="116" height="4" rx="2" fill="#ffffff" opacity=".16"/>
+      <rect x="64" y="77" width="112" height="14" rx="4" fill="#EDE3CF" stroke="#DCD1BA" stroke-width="1"/>
+      <path d="M58 88h124l-9 154c-.6 11-8.6 17-19.6 17H86.6c-11 0-19-6-19.6-17Z" fill="url(#body-bgw9tgi)" stroke="#DCD1BA" stroke-width="1.4"/>
+      <path d="M80 100l-7 130" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+      <path d="M165 100l6 128" stroke="#16241B" stroke-width="10" stroke-linecap="round" opacity=".05"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="url(#label-bgw9tgi)"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="none" stroke="#16241B" stroke-opacity=".08"/>
+      <g transform="translate(110 138)" stroke="#16241B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55">
+        <path d="M10 19V7"/>
+        <path d="M10 13.5c0-3.2 1.9-5 4.1-5 1.3 0 2 .9 2 1.9 0 2.4-2.2 4.3-6.1 4.3"/>
+        <path d="M9.7 16c0-2.6-1.6-4-3.5-4-1.1 0-1.8.7-1.8 1.7 0 2.1 1.8 3.8 5.3 3.8"/>
+      </g>
+      <text x="120" y="176" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1" fill="#16241B">GLUCO</text>
+      <text x="120" y="193" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1.2" fill="#16241B">CONTROL</text>
+      <path d="M96 201h48" stroke="#16241B" stroke-opacity=".28" stroke-width="1"/>
+      <text x="120" y="213" text-anchor="middle" font-family="Manrope, sans-serif" font-size="5.4" font-weight="700" letter-spacing="1.5" fill="#16241B" fill-opacity=".72">YOGURT DE NOPAL</text>
+      <text x="120" y="228" text-anchor="middle" font-family="Manrope, sans-serif" font-size="7" font-weight="800" letter-spacing=".6" fill="#16241B" fill-opacity=".8">150 g</text>
+      <circle cx="154" cy="232" r="3.6" fill="#C49A3F"/>
+    </svg></div>
+    <div class="flavor-card__body">
+      <h3>Endulzado</h3>
+      <p>La misma fórmula funcional con un toque de estevia o miel natural. Para cuidarte sin renunciar al sabor.</p>
+      <div class="flavor-card__foot">
+        <div class="price"><strong>$48</strong><span>desde · 150 g</span></div>
+        <a class="btn btn--sm btn--solid" href="../../productos/gluco-control/endulzado/">Elegir <svg class="icon " aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
+      </div>
+    </div>
+  </article><article class="flavor-card" data-reveal>
+    <div class="flavor-card__media" style="--tint:#F6E3DE;--tint2:#FBF1EE"><svg class="product-art" viewBox="0 0 240 300" role="img" aria-label="Envase de Gluco-Control Afrutado">
+      <defs>
+        <linearGradient id="body-bgxrwup" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset=".42" stop-color="#fdfaf3"/>
+          <stop offset="1" stop-color="#e8ddc8"/>
+        </linearGradient>
+        <linearGradient id="label-bgxrwup" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#EBC7BE"/>
+          <stop offset="1" stop-color="#D9A79C"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="120" cy="279" rx="74" ry="11" fill="#16241B" opacity=".11"/>
+      <rect x="56" y="46" width="128" height="31" rx="10" fill="#7A3A2E"/>
+      <rect x="62" y="53" width="116" height="4" rx="2" fill="#ffffff" opacity=".16"/>
+      <rect x="64" y="77" width="112" height="14" rx="4" fill="#EDE3CF" stroke="#DCD1BA" stroke-width="1"/>
+      <path d="M58 88h124l-9 154c-.6 11-8.6 17-19.6 17H86.6c-11 0-19-6-19.6-17Z" fill="url(#body-bgxrwup)" stroke="#DCD1BA" stroke-width="1.4"/>
+      <path d="M80 100l-7 130" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+      <path d="M165 100l6 128" stroke="#16241B" stroke-width="10" stroke-linecap="round" opacity=".05"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="url(#label-bgxrwup)"/>
+      <rect x="72" y="130" width="96" height="112" rx="9" fill="none" stroke="#16241B" stroke-opacity=".08"/>
+      <g transform="translate(110 138)" stroke="#16241B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55">
+        <path d="M10 19V7"/>
+        <path d="M10 13.5c0-3.2 1.9-5 4.1-5 1.3 0 2 .9 2 1.9 0 2.4-2.2 4.3-6.1 4.3"/>
+        <path d="M9.7 16c0-2.6-1.6-4-3.5-4-1.1 0-1.8.7-1.8 1.7 0 2.1 1.8 3.8 5.3 3.8"/>
+      </g>
+      <text x="120" y="176" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1" fill="#16241B">GLUCO</text>
+      <text x="120" y="193" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="16.5" font-weight="700" letter-spacing="1.2" fill="#16241B">CONTROL</text>
+      <path d="M96 201h48" stroke="#16241B" stroke-opacity=".28" stroke-width="1"/>
+      <text x="120" y="213" text-anchor="middle" font-family="Manrope, sans-serif" font-size="5.4" font-weight="700" letter-spacing="1.5" fill="#16241B" fill-opacity=".72">YOGURT DE NOPAL</text>
+      <text x="120" y="228" text-anchor="middle" font-family="Manrope, sans-serif" font-size="7" font-weight="800" letter-spacing=".6" fill="#16241B" fill-opacity=".8">150 g</text>
+      <circle cx="154" cy="232" r="3.6" fill="#B85C4A"/>
+    </svg></div>
+    <div class="flavor-card__body">
+      <h3>Afrutado</h3>
+      <p>Combinado con fruta natural de temporada. Una explosión de sabor con todos los beneficios del nopal y vitaminas extra.</p>
+      <div class="flavor-card__foot">
+        <div class="price"><strong>$48</strong><span>desde · 150 g</span></div>
+        <a class="btn btn--sm btn--solid" href="../../productos/gluco-control/afrutado/">Elegir <svg class="icon " aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
+      </div>
+    </div>
+  </article></div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container line-info-grid">
+      <div data-reveal>
+        <span class="eyebrow">Qué hace diferente</span>
+        <h2>Fibra, cultivos y un sabor honesto.</h2>
+        <p class="lead">El mucílago del nopal retiene agua y aporta cuerpo. Los cultivos lácticos transforman la leche y crean acidez. La canela redondea. No hay milagros: hay un proceso cuidado.</p>
+        <ul class="line-info-list"><li><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Mucílago de nopal como fibra soluble</li><li><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Cultivos lácticos vivos</li><li><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Original sin azúcar añadida</li><li><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Tres perfiles de sabor</li></ul>
+        <div class="mt-2"><div class="notice"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-info"></use></svg><div><strong>Prototipo estimado.</strong> Fichas estimadas del prototipo. Los valores nutrimentales se actualizarán con los análisis de laboratorio.</div></div></div>
+      </div>
+      <div data-reveal>
+        <span class="eyebrow">Ficha de la línea</span>
+        <h2>En números.</h2>
+        <div class="line-specs">
+          <div class="line-specs__row"><span>Línea</span><strong>Gluco-Control</strong></div><div class="line-specs__row"><span>Productos</span><strong>3 sabores</strong></div><div class="line-specs__row"><span>Presentaciones</span><strong>150 g y 400 g</strong></div><div class="line-specs__row"><span>Conservación</span><strong>2–6 °C · 21 días</strong></div><div class="line-specs__row"><span>Estado</span><strong>Prototipo · demo</strong></div>
+        </div>
+        <p class="form-note" style="margin-top:12px">Precios de demostración. No se procesan pagos ni se realizan envíos reales.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="tasting-band" data-reveal>
+    <div><h3>Lleva la línea a tu mesa.</h3><p>Solicita una degustación para tu familia, tu negocio o tu institución. Registramos la solicitud en esta demostración.</p></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn btn--solid" type="button" data-open-tasting><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-sparkle"></use></svg> Solicitar degustación</button>
+      <a class="btn btn--ghost" href="../../contacto/">Contacto</a>
+    </div>
+  </div>
+    </div>
+  </section></main>
+  <footer class="site-foot">
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a class="brand" href="../../" aria-label="biorigen. Biotecnología con origen, inicio">
+            <span class="brand-mark"><svg class="brand-symbol" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none">
+      <circle cx="24" cy="24" r="19" stroke="currentColor" stroke-width="1.4" opacity=".28"/>
+      <path d="M24 34V15.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M24 24.2c0-5.2 3.4-8.4 7.9-8.4 2.3 0 3.7 1.5 3.7 3.4 0 4.5-4.8 7.7-11.6 7.7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M23.5 28.6c0-4.4-2.8-7-6.3-7-1.9 0-3 1.2-3 2.8 0 3.7 3.8 6.4 9.3 6.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="36.5" cy="33.5" r="1.7" fill="currentColor"/>
+      <circle cx="40" cy="28.5" r="1.1" fill="currentColor" opacity=".75"/>
+      <circle cx="32" cy="39" r="1" fill="currentColor" opacity=".6"/>
+    </svg></span>
+            <span>
+              <span class="brand-word">biorigen<span>.</span></span>
+              <span class="brand-tag">Biotecnología con origen</span>
+            </span>
+          </a>
+          <p>Fermentados y soluciones biotecnológicas que nacen en Coatzacoalcos. Ciencia aplicada, ingredientes locales y proyectos que crecen con nosotros.</p>
+          <span class="foot-badge">Proyecto académico · ITESCO</span>
+        </div>
+        <div class="foot-col">
+          <h3>Productos</h3>
+          <a href="../../productos/gluco-control/">Gluco-Control</a>
+          <a href="../../productos/kefir/">Kéfir de leche</a>
+          <a href="../../productos/">Catálogo completo</a>
+          <button class="link-btn" type="button" data-open-tasting style="font-size:12px;padding:4px 0;border:0">Solicitar degustación</button>
+        </div>
+        <div class="foot-col">
+          <h3>Biorigen</h3>
+          <a href="../../nosotros/">Nosotros</a>
+          <a href="../../ciencia/">Ciencia</a>
+          <a href="../../proyectos/">Proyectos</a>
+          <a href="../../contacto/">Contacto</a>
+        </div>
+        <div class="foot-col">
+          <h3>Contacto</h3>
+          <a href="mailto:biorigen.itesco@gmail.com">biorigen.itesco@gmail.com</a>
+          <a href="tel:+529617021594">961 702 1594</a>
+          <p class="foot-address">Nardo 7, Iquisa, 96540 Coatzacoalcos, Veracruz<br>Instituto Tecnológico Superior de Coatzacoalcos</p>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span data-year>2026</span> Biorigen · Hecho con ciencia y fermentación.</span>
+        <span class="foot-legal">Sitio de demostración académica. Precios, fichas y pedidos son simulados. <a href="../../aviso-academico/" style="text-decoration:underline;text-underline-offset:2px">Aviso académico</a> · <a href="../../logotipos/" style="text-decoration:underline;text-underline-offset:2px">Logotipos</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="../../assets/js/data.js?v=72acc78030" defer></script>
+  <script src="../../assets/js/art.js?v=72acc78030" defer></script>
+  <script src="../../assets/js/components.js?v=72acc78030" defer></script>
+  <script src="../../assets/js/app.js?v=72acc78030" defer></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+/* ============================================================
+   BIORIGEN · Adaptación a pantallas
+   ============================================================ */
+
+@media (max-width: 1120px) {
+  .head-inner { gap: 14px; }
+  .menu-link { padding: 9px 10px; font-size: 12.5px; }
+  .head-cta { display: none; }
+  .hero-product--yogurt { left: -1%; }
+  .hero-product--kefir { right: -1%; }
+  .line-card__body { max-width: 60%; }
+  .team-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 1000px) {
+  .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-art { min-height: 500px; }
+  .hero-copy h1 { font-size: clamp(2.8rem, 6.6vw, 4.8rem); }
+  .science-layout { grid-template-columns: 1fr; gap: 38px; }
+  .science-intro { max-width: 64ch; }
+  .foot-grid { grid-template-columns: 1.4fr 1fr 1fr; }
+  .foot-col:last-child { grid-column: 1 / -1; }
+  .foot-col:last-child .foot-address { max-width: 46ch; }
+  .product-gallery { min-height: 440px; }
+}
+
+@media (max-width: 960px) {
+  :root { --head-h: 60px; }
+
+  .head-nav { display: none; }
+  .menu-btn { display: grid; }
+  .head-actions { margin-left: auto; }
+  .brand-word { font-size: 1.3rem; }
+  .brand-mark { width: 32px; height: 32px; border-radius: 9px; }
+  .brand-symbol { width: 22px; height: 22px; }
+
+  .hero-grid { grid-template-columns: 1fr; padding-top: 44px; }
+  .hero-copy { max-width: 660px; }
+  .hero-copy .lead { max-width: 54ch; }
+  .hero-art { min-height: 520px; margin-top: 12px; }
+  .hero-art::before { width: min(430px, 82%); }
+  .hero-disc { width: min(360px, 70%); }
+  .hero-product--yogurt { width: 30%; left: 8%; }
+  .hero-product--kefir { width: 24%; right: 8%; }
+  .hero-product--cream { width: 27%; right: 22%; }
+  .hero-stamp { left: 6%; }
+
+  .values-grid { grid-template-columns: 1fr 1fr; }
+  .value-item { border-left: 0; border-top: 1px solid var(--line-soft); padding: 24px 20px; }
+  .value-item:nth-child(1), .value-item:nth-child(2) { border-top: 0; }
+  .value-item:nth-child(odd) { padding-left: 0; }
+  .value-item:nth-child(even) { padding-right: 0; }
+
+  .line-grid { grid-template-columns: 1fr; }
+  .line-card { min-height: 430px; }
+  .line-card__body { max-width: 58%; }
+  .line-card__art { width: 42%; max-width: 240px; }
+
+  .story-grid { grid-template-columns: 1fr; gap: 36px; }
+  .story-media { min-height: 400px; order: 2; }
+  .story-copy { order: 1; }
+
+  .process-grid { grid-template-columns: 1fr 1fr; gap: 0 28px; }
+  .process-step { padding: 22px 0 26px; }
+
+  .team-grid { grid-template-columns: repeat(3, 1fr); }
+
+  .fair-band { grid-template-columns: 1fr; gap: 20px; }
+  .fair-band .btn { justify-self: start; }
+
+  .about-hero { grid-template-columns: 1fr; }
+  .about-media { min-height: 380px; order: 2; }
+  .science-hero-grid { grid-template-columns: 1fr; }
+  .science-hero-art { min-height: 320px; order: 2; }
+
+  .line-hero__grid { grid-template-columns: 1fr; }
+  .line-hero__art { min-height: 350px; order: 2; }
+  .line-hero__copy { order: 1; }
+
+  .product-hero__grid { grid-template-columns: 1fr; gap: 26px; }
+  .product-gallery { position: relative; top: auto; min-height: 400px; }
+  .product-info { padding-top: 0; }
+
+  .product-details-grid { grid-template-columns: 1fr; gap: 30px; }
+  .related-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .project-feature { grid-template-columns: 1fr; }
+  .project-feature__art { min-height: 260px; order: 2; }
+  .project-hero__grid { grid-template-columns: 1fr; }
+  .project-hero__art { min-height: 310px; order: 2; }
+  .project-layout { grid-template-columns: 1fr; }
+  .project-side { position: static; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+  .checkout-grid { grid-template-columns: 1fr; }
+  .checkout-summary { order: -1; }
+
+  .logo-grid { grid-template-columns: 1fr; }
+
+  .foot-grid { gap: 30px; }
+}
+
+@media (max-width: 820px) {
+  .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .flavor-grid { grid-template-columns: repeat(2, 1fr); }
+  .project-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .pillar-grid { grid-template-columns: 1fr; }
+  .highlight-grid { grid-template-columns: 1fr; }
+  .related-grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .section-head { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .section-head .link-btn { align-self: flex-start; }
+  .page-hero h1 { max-width: none; }
+  .cta-band { flex-direction: column; align-items: flex-start; }
+  .tasting-band { flex-direction: column; align-items: flex-start; }
+  .line-info-grid { grid-template-columns: 1fr; }
+  .story-quote { font-size: 1.25rem; }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+  .foot-col:last-child { grid-column: auto; }
+  .foot-brand { grid-column: 1 / -1; }
+  .foot-mark { margin-top: 34px; }
+}
+
+@media (max-width: 720px) {
+  :root { --gutter: 22px; }
+  .section { padding: 60px 0; }
+  .section--tight { padding: 46px 0; }
+
+  .hero-actions .btn { flex: 1; min-width: 150px; }
+  .hero-meta { gap: 20px 30px; margin-top: 34px; }
+  .hero-art { min-height: 450px; }
+  .hero-product--yogurt { width: 32%; left: 4%; }
+  .hero-product--kefir { width: 26%; right: 4%; }
+  .hero-product--cream { width: 29%; right: 19%; top: 2%; }
+  .hero-stamp { font-size: 9.5px; padding: 7px 10px; left: 1%; }
+
+  .line-card { min-height: 430px; }
+  .line-card__body { max-width: 100%; padding-bottom: 160px; }
+  .line-card__art { width: 46%; right: -2%; bottom: -2%; }
+
+  .form-grid { grid-template-columns: 1fr; }
+  .product-perks { grid-template-columns: 1fr; }
+  .buy-row .btn { min-width: 100%; flex-basis: 100%; }
+  .buy-row .qty { order: 2; }
+  .buy-row .btn[data-add-to-cart] { order: 1; }
+  .buy-row .btn[data-tasting] { order: 3; }
+
+  .timeline__item { grid-template-columns: 84px 1fr; gap: 18px; }
+  .timeline__year { font-size: 1.25rem; }
+
+  .foot-bottom { flex-direction: column; gap: 10px; }
+  .foot-legal { text-align: left; }
+
+  .toast-stack { right: 12px; bottom: 12px; width: calc(100% - 24px); }
+  .checkout-step span { display: none; }
+  .checkout-step__n { width: 24px; height: 24px; }
+
+  .buy-row .qty { width: 100%; }
+  .buy-row .qty input { flex: 1; }
+
+  .product-gallery { min-height: 340px; }
+  .product-gallery__art { width: min(230px, 58%); }
+
+  .about-media, .science-hero-art { min-height: 320px; }
+  .about-media .product-art, .science-hero-art .product-art { width: 40%; }
+
+  /* Modales como hoja inferior */
+  .modal { align-items: end; padding: 0; }
+  .modal__panel {
+    width: 100%;
+    max-height: min(92svh, 900px);
+    border-radius: 28px 28px 0 0;
+    border-bottom: 0;
+    padding: 16px clamp(18px, 5vw, 28px) calc(26px + env(safe-area-inset-bottom));
+    transform: translate3d(0, 34px, 0);
+  }
+  .modal.is-open .modal__panel { transform: none; }
+  .modal__panel .sheet-grab { display: flex; margin: -4px 0 8px; }
+  .modal--wide .modal__panel, .modal--narrow .modal__panel { width: 100%; }
+}
+
+@media (max-width: 600px) {
+  :root { --gutter: 18px; }
+
+  .catalog-grid { grid-template-columns: 1fr; }
+  .flavor-grid { grid-template-columns: 1fr; }
+  .project-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr 1fr; }
+  .related-grid { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr; }
+  .science-grid { grid-template-columns: 1fr; }
+  .value-item { padding: 18px 0 !important; border-top: 1px solid var(--line-soft); }
+  .value-item:first-child { border-top: 0; }
+  .process-grid { grid-template-columns: 1fr; }
+  .process-step { padding: 20px 0 24px; }
+  .foot-grid { grid-template-columns: 1fr; }
+  .foot-brand { grid-column: auto; }
+
+  .cart-drawer {
+    top: 0; right: 0; bottom: 0; width: 100%;
+    border-radius: 0; border: 0;
+  }
+  .cart-head { padding: 4px 20px 16px; }
+  .cart-body { padding: 16px 20px; }
+  .cart-foot { padding: 16px 20px calc(18px + env(safe-area-inset-bottom)); }
+
+  .hero-art { min-height: 400px; }
+  .hero-art::before { width: min(340px, 88%); }
+  .hero-disc { width: min(300px, 78%); }
+  .hero-product--yogurt { width: 34%; left: 1%; bottom: 4%; }
+  .hero-product--kefir { width: 28%; right: 1%; bottom: 2%; }
+  .hero-product--cream { width: 31%; right: 15%; top: 2%; }
+  .hero-stamp { left: 0; top: 0; }
+  .hero-label { font-size: 9.5px; padding: 4px 8px; }
+  .hero-meta strong { font-size: 1.7rem; }
+
+  .line-card { min-height: 410px; padding: 24px; }
+  .line-card__body { padding-bottom: 140px; }
+  .line-card__art { width: 48%; }
+  .line-card__body h3 { font-size: 2rem; }
+
+  .fair-band { padding: 28px 24px; }
+  .fair-year { font-size: 2.8rem; }
+  .cta-band { padding: 30px 24px; }
+  .cta-band__actions { width: 100%; }
+  .cta-band__actions .btn { flex: 1; }
+
+  .product-hero__grid { padding-top: 0; }
+  .price-now { font-size: 1.95rem; }
+  .product-gallery { min-height: 310px; }
+  .product-gallery::after { inset: 14px; }
+  .product-gallery__caption { font-size: 10px; left: 16px; right: 16px; bottom: 14px; }
+  .product-gallery__flag { left: 16px; top: 14px; font-size: 1rem; }
+
+  /* Tres pestañas de ancho igual: en línea flexible la tercera quedaba
+     suelta y centrada, rompiendo el control segmentado. */
+  .tab-list {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%; border-radius: 20px; gap: 2px;
+  }
+  .tab-btn {
+    padding: 10px 6px; font-size: 11.5px; line-height: 1.25;
+    text-align: center; display: grid; place-items: center;
+  }
+
+  .project-hero__art { min-height: 270px; }
+  .project-hero__art .product-art { width: 48%; }
+  .project-side { padding: 20px; }
+
+  .head-inner { min-height: var(--head-h); }
+  .brand-word { font-size: 1.22rem; }
+  .brand-tag { display: none; }
+  .icon-btn { width: 44px; height: 44px; }
+  .head-actions { gap: 2px; }
+
+  .logo-stage__word { font-size: 2.1rem; }
+  .logo-stage__lockup .brand-symbol { width: 46px; height: 46px; }
+
+  .foot-mark { font-size: 22vw; }
+}
+
+@media (max-width: 400px) {
+  .hero-copy h1 { font-size: 2.6rem; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; }
+  .hero-meta { gap: 16px 22px; }
+  .hero-meta strong { font-size: 1.5rem; }
+  .hero-art { min-height: 350px; }
+  .hero-product--cream { display: none; }
+  .hero-product--yogurt { width: 38%; left: 4%; }
+  .hero-product--kefir { width: 31%; right: 4%; }
+  .team-grid { grid-template-columns: 1fr; }
+  .line-card__body h3 { font-size: 1.75rem; }
+  .line-card__body { padding-bottom: 120px; }
+  .line-card__art { width: 52%; }
+  .product-gallery { min-height: 280px; }
+  .modal__panel { padding-left: 16px; padding-right: 16px; }
+  .filter-row { width: 100%; }
+  .filter-btn { flex: 1; padding: 8px 8px; text-align: center; }
+}
